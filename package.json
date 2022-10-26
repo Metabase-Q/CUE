@@ -1,0 +1,36 @@
+{
+  "name": "@mbq/cue",
+  "type": "module",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/cue.umd.cjs",
+  "module": "./dist/cue.js",
+  "exports": {
+    ".": {
+      "import": "./dist/cue.js",
+      "require": "./dist/cue.umd.cjs"
+    }
+  },
+  "version": "0.0.1",
+  "description": "Metabase Q Visualization Package",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Metabase-Q/CUE.git"
+  },
+  "dependencies": {
+    "d3": "^7.6.1",
+    "grunt": "^1.5.3",
+    "path": "^0.12.7",
+    "vite": "^3.1.8"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}
