@@ -10,7 +10,6 @@ import {
   create,
   scaleLinear,
   scaleLog,
-  select,
   zip,
 } from "d3";
 import { getPalette } from "./palettes";
@@ -37,7 +36,6 @@ export default function BarChart(
   // Compute values.
   const X = map(data, x);
   const Y = map(data, y);
-  console.log(Y);
 
   // Compute default domains, and unique the x-domain.
   if (xDomain === undefined) xDomain = X;
@@ -88,7 +86,7 @@ export default function BarChart(
 
   addYAxis();
 
-//   addBars();
+  addBars();
 
   addXAxis();
 
